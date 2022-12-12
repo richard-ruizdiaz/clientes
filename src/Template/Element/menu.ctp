@@ -14,15 +14,11 @@
             <?php if(isset($current_user)): ?>
                 <ul class="nav navbar-nav">
                     <?php if($current_user['role'] == 'admin'): ?>
-                   
+
                     <?php endif; ?>
-                    
-                     <li>
-                        <?= $this->Html->link('Listado de Vehiculos', ['controller' => 'Stocks', 'action' => 'index']) ?>
-                    </li>
 
                 </ul>
-                
+
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown">
 
@@ -31,7 +27,7 @@
                     <li>
                       <?= $this->Html->link('Ver Perfil', ['controller' => 'Users', 'action' => 'view', $current_user['id']]) ?>
                     </li>
-                    
+
                     <li>
                       <?= $this->Html->link('Cerrar sesión', ['controller' => 'Users', 'action' => 'logout']) ?>
                     </li>
@@ -45,7 +41,7 @@
             <?php else: ?>
             <ul class="nav navbar-nav navbar-right">
               <li>
-                   
+
               </li>
             </ul>
             <?php endif; ?>
