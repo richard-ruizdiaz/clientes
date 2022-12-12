@@ -1,0 +1,637 @@
+2022-12-12 08:07:31 Error: [BadMethodCallException] Unknown finder method "auth" in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Table.php on line 2413
+Request URL: /
+Referer URL: http://localhost/clientes/
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Table.php(1353): Cake\ORM\Table->callFinder('auth', Object(Cake\ORM\Query), Array)
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(159): Cake\ORM\Table->find('auth', Array)
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Auth\BaseAuthenticate.php(107): Cake\Auth\BaseAuthenticate->_query('richard-d@hotma...')
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Auth\FormAuthenticate.php(78): Cake\Auth\BaseAuthenticate->_findUser('richard-d@hotma...', '123')
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Controller\Component\AuthComponent.php(824): Cake\Auth\FormAuthenticate->authenticate(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\src\Controller\UsuariosController.php(26): Cake\Controller\Component\AuthComponent->identify()
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Controller\Controller.php(609): App\Controller\UsuariosController->login()
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(120): Cake\Controller\Controller->invokeAction()
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(94): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\UsuariosController))
+#9 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 {main}
+
+
+2022-12-12 08:09:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Usuarios could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Usuarios',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:09:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Usuarios could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Usuarios',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:12:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/jquery.timepicker.css
+Referer URL: http://localhost/clientes/
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:12:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/jquery-3.3.1.js
+Referer URL: http://localhost/clientes/
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:12:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/push.js
+Referer URL: http://localhost/clientes/
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:12:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/push.min.js
+Referer URL: http://localhost/clientes/
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:12:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/jquery.timepicker.min.js
+Referer URL: http://localhost/clientes/
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/jquery.timepicker.css
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/jquery-3.3.1.js
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/cake.css
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/base.css
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/push.js
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/push.min.js
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/jquery.timepicker.min.js
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /fonts/fontawesome-webfont.woff2?v=4.7.0
+Referer URL: http://localhost/clientes/css/all.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /fonts/fontawesome-webfont.woff?v=4.7.0
+Referer URL: http://localhost/clientes/css/all.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:13:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /fonts/fontawesome-webfont.ttf?v=4.7.0
+Referer URL: http://localhost/clientes/css/all.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/jquery-3.3.1.js
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/jquery.timepicker.css
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/base.css
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /css/cake.css
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/push.js
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/push.min.js
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /js/jquery.timepicker.min.js
+Referer URL: http://localhost/clientes/users/home
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /fonts/fontawesome-webfont.woff2?v=4.7.0
+Referer URL: http://localhost/clientes/css/all.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /fonts/fontawesome-webfont.woff?v=4.7.0
+Referer URL: http://localhost/clientes/css/all.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+
+2022-12-12 08:14:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Fonts could not be found. in C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php on line 104
+Exception Attributes: array (
+  'class' => 'Fonts',
+  'plugin' => false,
+  'prefix' => false,
+  '_ext' => false,
+)
+Request URL: /fonts/fontawesome-webfont.ttf?v=4.7.0
+Referer URL: http://localhost/clientes/css/all.min.css
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(39): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(64): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Filter\ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\DispatcherFilter.php(146): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(353): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventManager.php(330): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Event\EventDispatcherTrait.php(114): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(79): Cake\Http\ActionDispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(67): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\clientes\webroot\index.php(36): Cake\Routing\Dispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 {main}
+
+

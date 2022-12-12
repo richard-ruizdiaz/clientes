@@ -1,0 +1,61 @@
+.navbar-main {
+    background-color:#000;
+}
+
+section#header {
+    background-color:#1a1a1a;
+}
+
+.navbar-main li.account {
+    background-color:#1a1a1a;
+}
+
+.navbar-main .navbar-nav>.active>a, .navbar-main .navbar-nav>.active>a:focus, .navbar-main .navbar-nav>.active>a:hover, .navbar-main .navbar-nav>.open>a, .navbar-main .navbar-nav>.open>a:focus, .navbar-main .navbar-nav>.open>a:hover, .navbar-main .navbar-nav>li>a:focus, .navbar-main .navbar-nav>li>a:hover {
+    background-color:#1a1a1a;
+}
+
+
+.logincontainer {
+    max-width: none;
+}
+
+.mayuscula {
+    font-weight: 700;
+}
+
+h1 {
+    color:#777 !important;
+}
+
+.btn-primary {
+    background-color: #777777;
+    border-color: #e3e3e3;
+}
+
+.status-grace {
+    color: #E0100E;
+}
+
+#registro-necessario {
+    font-size: 12px;
+}
+
+#registro-necessario .pagos-bg {
+    background: #ededed none repeat scroll 0 0;
+    border: 1px solid #d0d0d0;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+#registro-necessario .col-md-6 .pagos-bg {
+    height: 230px;
+}
+
+.padding-top-10 {
+    padding-top: 10px;
+}
+.logoFatura {
+    background-color: #1A1A1A;
+    padding: 10px;
+    border-radius: 3px;
+}
