@@ -9,7 +9,7 @@ return [
      * Development Mode:
      * true: Errors and warnings shown.
      */
-    'debug' => false,
+    'debug' => true,
 
     /**
      * Configure basic information about the application.
@@ -216,7 +216,7 @@ return [
             'port' => '5432',
             'username' => 'postgres',
             'password' => 'D&GA7EB6vuYC6zdztD7S2',
-            'database' => 'app3',
+            'database' => 'hvnimpor_cliente',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
@@ -299,6 +299,6 @@ return [
      */
     'Session' => [
         'defaults' => 'php',
-        'timeout'  => 99999999999,
+        'timeout' => 99999999999,
     ],
 ];

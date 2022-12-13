@@ -1,0 +1,117 @@
+2022-12-13 08:22:16 Error: [ParseError] syntax error, unexpected 'extends' (T_EXTENDS) in C:\xampp\htdocs\clientes\src\Model\Table\VotantesTable.php on line 19
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(115): Bake\Shell\Task\ModelTask->bakeTable(Object(Cake\ORM\Table), Array)
+#1 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Votantes')
+#2 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\BakeShell.php(273): Bake\Shell\Task\ModelTask->main('Votantes')
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('Votantes', 0)
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\BakeShell.php(274): Cake\Collection\Collection->each(Object(Closure))
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(518): Bake\Shell\BakeShell->all('votantes')
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#9 C:\xampp\htdocs\clientes\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#10 {main}
+
+
+2022-12-13 08:23:37 Error: [ParseError] syntax error, unexpected 'extends' (T_EXTENDS) in C:\xampp\htdocs\clientes\src\Model\Table\VotantesTable.php on line 19
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Vo...', 'App')
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(246): Cake\Core\App::className('Votantes', 'Model/Table', 'Table')
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(194): Cake\ORM\Locator\TableLocator->_getClassName('Votantes', Array)
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(196): Cake\ORM\Locator\TableLocator->get('Votantes', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(113): Bake\Shell\Task\ModelTask->getTableObject('Votantes', 'votantes')
+#9 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(101): Bake\Shell\Task\ModelTask->bake('Votantes')
+#10 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ModelTask->main('votantes')
+#11 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#12 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 C:\xampp\htdocs\clientes\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
+2022-12-13 08:27:48 Error: [Error] Undefined constant 'namespaceApp\Model\Table' in C:\xampp\htdocs\clientes\src\Model\Table\VotantesTable.php on line 2
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\composer\ClassLoader.php(444): include()
+#1 C:\xampp\htdocs\clientes\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#3 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Vo...', 'App')
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(246): Cake\Core\App::className('Votantes', 'Model/Table', 'Table')
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(194): Cake\ORM\Locator\TableLocator->_getClassName('Votantes', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(128): Cake\ORM\Locator\TableLocator->get('Votantes', Array)
+#9 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(69): Bake\Shell\Task\ControllerTask->bake('Votantes')
+#10 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ControllerTask->main('votantes')
+#11 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#12 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 C:\xampp\htdocs\clientes\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
+2022-12-13 08:28:25 Error: [Error] Undefined constant 'namespaceApp\Model\Table' in C:\xampp\htdocs\clientes\src\Model\Table\VotantesTable.php on line 2
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\composer\ClassLoader.php(444): include()
+#1 C:\xampp\htdocs\clientes\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#3 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Vo...', 'App')
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(246): Cake\Core\App::className('Votantes', 'Model/Table', 'Table')
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(194): Cake\ORM\Locator\TableLocator->_getClassName('Votantes', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(128): Cake\ORM\Locator\TableLocator->get('Votantes', Array)
+#9 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(69): Bake\Shell\Task\ControllerTask->bake('Votantes')
+#10 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ControllerTask->main('votantes')
+#11 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#12 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 C:\xampp\htdocs\clientes\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
+2022-12-13 08:32:30 Error: [Error] Undefined constant 'namespaceApp\Model\Table' in C:\xampp\htdocs\clientes\src\Model\Table\VotantesTable.php on line 2
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\composer\ClassLoader.php(444): include()
+#1 C:\xampp\htdocs\clientes\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#3 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Vo...', 'App')
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(246): Cake\Core\App::className('Votantes', 'Model/Table', 'Table')
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(194): Cake\ORM\Locator\TableLocator->_getClassName('Votantes', Array)
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(282): Cake\ORM\Locator\TableLocator->get('Votantes', Array)
+#9 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\TemplateTask.php(142): Bake\Shell\Task\TemplateTask->_loadController()
+#10 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\TemplateTask->main('votantes')
+#11 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#12 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#13 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#14 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#15 C:\xampp\htdocs\clientes\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#16 {main}
+
+
+2022-12-13 08:43:13 Error: [ParseError] syntax error, unexpected 'extends' (T_EXTENDS) in C:\xampp\htdocs\clientes\src\Controller\VotantesController.php on line 10
+Stack Trace:
+#0 C:\xampp\htdocs\clientes\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('C:\\xampp\\htdocs...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controller\\...')
+#2 [internal function]: spl_autoload_call('App\\Controller\\...')
+#3 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\TestTask.php(235): class_exists('App\\Controller\\...')
+#4 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(214): Bake\Shell\Task\TestTask->bake('Controller', 'Votantes')
+#5 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(163): Bake\Shell\Task\ControllerTask->bakeTest('Votantes')
+#6 C:\xampp\htdocs\clientes\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(69): Bake\Shell\Task\ControllerTask->bake('Votantes')
+#7 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(532): Bake\Shell\Task\ControllerTask->main('votantes')
+#8 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\Shell.php(525): Cake\Console\Shell->runCommand(Array, false, Array)
+#9 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(230): Cake\Console\Shell->runCommand(Array, true, Array)
+#10 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#11 C:\xampp\htdocs\clientes\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#12 C:\xampp\htdocs\clientes\bin\cake.php(20): Cake\Console\ShellDispatcher::run(Array)
+#13 {main}
+
+
