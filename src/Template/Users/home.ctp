@@ -63,8 +63,8 @@
     <div class="col-md-12 pull-md-right main-content">
         <div class="tiles clearfix">
             <div class="row">
-                <div class="col-sm-3 col-xs-6 tile" onclick='/clientes/votantes/add'>
-                    <a href='/clientes/votantes/add'>
+                <div class="col-sm-3 col-xs-6 tile" onclick='/votantes/add'>
+                    <a href='/votantes/add'>
                         <div class="stat">+</div>
                         <div class="title">Cargar votantes</div>
                         <div class="highlight bg-color-red"></div>
